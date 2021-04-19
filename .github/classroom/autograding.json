@@ -1,0 +1,434 @@
+{
+  "tests": [
+    {
+      "name": "[Exe1][operacoesBasicas] 3.5 + 4 deve voltar 7.5",
+      "setup": "npm install --silent > out",
+      "run": "npm run t1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe1][operacoesBasicas] 9 - 1.75 deve voltar 7.25",
+      "setup": "npm install --silent > out",
+      "run": "npm run t2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe1][operacoesBasicas] 1.8 * 7 deve voltar 12.6",
+      "setup": "npm install --silent > out",
+      "run": "npm run t3",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe1][operacoesBasicas] 7 / 2 deve voltar 3.5",
+      "setup": "npm install --silent > out",
+      "run": "npm run t4",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe1][operacoesBasicas] 8 elevado a 3 deve voltar 512",
+      "setup": "npm install --silent > out",
+      "run": "npm run t5",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe1][operacoesBasicas] Divisão por zero não deve ser possível",
+      "setup": "npm install --silent > out",
+      "run": "npm run t6",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe1][operacoesBasicas] Operação que não existe deve voltar undefined",
+      "setup": "npm install --silent > out",
+      "run": "npm run t7",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe1][comparadorBasico] 3 e 3 são estritamente iguais",
+      "setup": "npm install --silent > out",
+      "run": "npm run t8",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe1][comparadorBasico] undefined e undefined são estritamente iguais",
+      "setup": "npm install --silent > out",
+      "run": "npm run t9",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe1][comparadorBasico] 'ABC' e 'ABC' são estritamente iguais",
+      "setup": "npm install --silent > out",
+      "run": "npm run t10",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe1][comparadorBasico] 3 e '3' são equivalentes",
+      "setup": "npm install --silent > out",
+      "run": "npm run t11",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe1][comparadorBasico] null e undefined são equivalentes",
+      "setup": "npm install --silent > out",
+      "run": "npm run t12",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe1][comparadorBasico] 1 e 2 são diferentes",
+      "setup": "npm install --silent > out",
+      "run": "npm run t13",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe1][comparadorBasico] '1' e 2 são diferentes",
+      "setup": "npm install --silent > out",
+      "run": "npm run t14",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe2][abreviadorNomes] Yuri Dirickson deve retornar Yuri D.",
+      "setup": "npm install --silent > out",
+      "run": "npm run t15",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe2][abreviadorNomes] Marina Silva deve retornar Marina S.",
+      "setup": "npm install --silent > out",
+      "run": "npm run t16",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe2][abreviadorNomes] Robson deve retornar Robson",
+      "setup": "npm install --silent > out",
+      "run": "npm run t17",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe2][converteDataParaFormaCompleta] Data vazia deve devolver null",
+      "setup": "npm install --silent > out",
+      "run": "npm run t18",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe2][converteDataParaFormaCompleta] Data 10/11/2019 deve devolver 10 de Novembro de 2019",
+      "setup": "npm install --silent > out",
+      "run": "npm run t19",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe2][converteDataParaFormaCompleta] Data 03/02/2000 deve devolver 03 de Fevereiro de 2000",
+      "setup": "npm install --silent > out",
+      "run": "npm run t20",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe2][converteDataParaFormaCompleta] Data 07/05/1987 deve devolver 07 de Maio de 1987",
+      "setup": "npm install --silent > out",
+      "run": "npm run t21",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe3][somadorPares] 1 e 4 deve devolver 6",
+      "setup": "npm install --silent > out",
+      "run": "npm run t22",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe3][somadorPares] 2 e 10 deve devolver 30",
+      "setup": "npm install --silent > out",
+      "run": "npm run t23",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe3][somadorPares] 1 e 10 deve devolver 30",
+      "setup": "npm install --silent > out",
+      "run": "npm run t24",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe3][somadorPares] 2 e 11 deve devolver 30",
+      "setup": "npm install --silent > out",
+      "run": "npm run t25",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe3][somadorPares] 1 e 11 deve devolver 30",
+      "setup": "npm install --silent > out",
+      "run": "npm run t26",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe3][somadorPares] 1 e 3 deve devolver 2",
+      "setup": "npm install --silent > out",
+      "run": "npm run t27",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe3][somadorPares] 8 e 8 deve devolver 6",
+      "setup": "npm install --silent > out",
+      "run": "npm run t28",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe3][somadorPares] 3 e 3 deve devolver 6",
+      "setup": "npm install --silent > out",
+      "run": "npm run t29",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe4][acharMenor] Se o vetor estiver vazio, devolve undefined",
+      "setup": "npm install --silent > out",
+      "run": "npm run t30",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe4][acharMenor] Para [1,2,3,4,5] retorna 1",
+      "setup": "npm install --silent > out",
+      "run": "npm run t31",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe4][acharMenor] Para [1,2,3,4,0] retorna 0",
+      "setup": "npm install --silent > out",
+      "run": "npm run t32",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe4][acharMenor] Para [1,2,-3,4,0] retorna -3'",
+      "setup": "npm install --silent > out",
+      "run": "npm run t33",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe4][acharPares] Se o vetor estiver vazio, devolve um vetor vazio",
+      "setup": "npm install --silent > out",
+      "run": "npm run t34",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe4][acharPares] Para [1,2,3,4,5] retorna [2,4]",
+      "setup": "npm install --silent > out",
+      "run": "npm run t35",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe4][acharPares] Para [1,2,3,4,0] retorna [2,4,0]",
+      "setup": "npm install --silent > out",
+      "run": "npm run t36",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe4][acharPares] Para [1,2,3,-4,0] retorna [2,-4,0]",
+      "setup": "npm install --silent > out",
+      "run": "npm run t37",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe5][calculaImcs] deve devolver 'Abaixo do peso' para IMC abaixo de 18.5",
+      "setup": "npm install --silent > out",
+      "run": "npm run t38",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe5][calculaImcs] deve devolver \"Normal\" para IMC acima de de 18.5 e abaixo de 25",
+      "setup": "npm install --silent > out",
+      "run": "npm run t39",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe5][calculaImcs] deve devolver \"Excesso de peso\" para IMC acima de 25 e abaixo de 30",
+      "setup": "npm install --silent > out",
+      "run": "npm run t40",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe5][calculaImcs] deve devolver \"Obesidade Leve (Grau I)\" para IMC acima de 30 e abaixo de 35",
+      "setup": "npm install --silent > out",
+      "run": "npm run t41",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe5][calculaImcs] deve devolver \"Obesidade Severa (Grau II)\" para IMC acima de 35 e abaixo de 40",
+      "setup": "npm install --silent > out",
+      "run": "npm run t42",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "[Exe5][calculaImcs] deve devolver \"Obesidade Mórbida (Grau III)\" para IMC acima de 40",
+      "setup": "npm install --silent > out",
+      "run": "npm run t43",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
