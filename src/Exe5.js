@@ -17,5 +17,22 @@
  * @param {Number} pessoa.altura altura da pessoa em metros, com duas casas decimais
  * @returns {String} estado do peso da pessoa
  */
-function calculaImcs(pessoa){
+function calculaImcs(pessoa) {
+
+    let imc = pessoa.peso / (pessoa.altura * pessoa.altura)
+
+    if (imc < 18.5) {
+        return 'Abaixo do peso'
+    } else if (imc >= 18.5 && imc <= 24.9) {
+        return 'Normal'
+    } else if (imc >= 25 && imc <= 29.9) {
+        return 'Excesso de peso'
+    } else if (imc >= 30.0 && imc <= 34.9) {
+        return 'Obesidade Leve (Grau I)'
+    } else if (imc >= 35.0 && imc <= 39.9) {
+        return 'Obesidade Severa (Grau II)'
+    } else if (imc >= 40.0) {
+        return 'Obesidade Mórbida (Grau III)'
+    }
 }
+

@@ -2,6 +2,9 @@
  * Função que recebe uma operação em formato de texto e devolve o resultado desta operação com os dois números passados,
  * na ordem em que eles foram passados. (Use as funções do Math se necessário)
  * 
+ * 
+ * 
+ * 
  * As operações são identificadas da seguinte maneira:
  *  - A: Adição - Soma numero1 com numero2
  *  - S: Subtração - Subtrai numero2 do numero1
@@ -20,6 +23,25 @@
  * @returns {Number} resultado da operação
  */
 function operacoesBasicas(operacao, numero1, numero2) {
+    if (operacao == "A") {
+        return numero1 + numero2
+    } else if (operacao == "S") {
+        return numero1 - numero2
+    } else if (operacao == "M") {
+        return numero1 * numero2
+    } else if (operacao == "D") {
+        if (numero1 != 0 && numero2 != 0) {
+            return numero1 / numero2
+        } else {
+            return NaN
+        }
+    } else if (operacao == "P") {
+        return numero1 ** numero2
+    } else if (typeof (numero1) != "number" || typeof (numero2) != "number") {
+        return NaN
+    } else if (operacao != "A" || "S" || "M" || "D" || "P") {
+        return undefined
+    }
 }
 
 /**
@@ -35,4 +57,17 @@ function operacoesBasicas(operacao, numero1, numero2) {
  * @returns {string} mensagem com o resultado da comparação 
  */
 function comparadorBasico(elemento1, elemento2) {
+    if (typeof (elemento1) == typeof (elemento2) && elemento1 == elemento2) {
+
+        return 'Elemento ' + elemento1 + " (" + typeof (elemento1) + ") é estritamente igual ao elemento " + elemento2 + " (" + typeof (elemento2) + ")"
+
+    } else if (elemento1 != elemento2) {
+
+        return 'Elemento ' + elemento1 + " (" + typeof (elemento1) + ") é diferente do elemento " + elemento2 + " (" + typeof (elemento2) + ")"
+
+    } else if (elemento1 == elemento2 && typeof (elemento1) != typeof (elemento2)) {
+
+        return 'Elemento ' + elemento1 + " (" + typeof (elemento1) + ") é equivalente ao elemento " + elemento2 + " (" + typeof (elemento2) + ")"
+
+    }
 }

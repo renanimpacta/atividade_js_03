@@ -9,7 +9,13 @@
  * @param {String} nomeCompleto nome completo da pessoa.
  * @return string com o segundo nome abreviado
  */
+
 function abreviadorNomes(nomeCompleto) {
+    let nome = nomeCompleto.split(" ");
+    if (nome.length == 1) {
+        return nomeCompleto
+    }
+    return nome[0] + " " + nome[1].substring(0, 1) + ".";
 
 }
 
@@ -25,6 +31,37 @@ function abreviadorNomes(nomeCompleto) {
  * @param {String} data 
  * @returns {String} data no formato 
  */
-function converteDataParaFormaCompleta(data){ 
-  
+function converteDataParaFormaCompleta(data) {
+    let dtNumero = data.split("/")
+
+    if (dtNumero[1] == "01") {
+        dtNumero[1] = "Janeiro"
+    } else if (dtNumero[1] == "02") {
+        dtNumero[1] = "Fevereiro"
+    } else if (dtNumero[1] == "03") {
+        dtNumero[1] = "Março"
+    } else if (dtNumero[1] == "04") {
+        dtNumero[1] = "Abril"
+    } else if (dtNumero[1] == "05") {
+        dtNumero[1] = "Maio"
+    } else if (dtNumero[1] == "06") {
+        dtNumero[1] = "Junho"
+    } else if (dtNumero[1] == "07") {
+        dtNumero[1] = "Julho"
+    } else if (dtNumero[1] == "08") {
+        dtNumero[1] = "Agosto"
+    } else if (dtNumero[1] == "09") {
+        dtNumero[1] = "Setembro"
+    } else if (dtNumero[1] == "10") {
+        dtNumero[1] = "Outubro"
+    } else if (dtNumero[1] == "11") {
+        dtNumero[1] = "Novembro"
+    } else if (dtNumero[1] == "12") {
+        dtNumero[1] = "Dezembro"
+    } else {
+        return null
+    }
+
+    return dtNumero[0] + " de " + dtNumero[1] + " de " + dtNumero[2]
 }
+

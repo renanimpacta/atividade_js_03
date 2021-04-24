@@ -4,7 +4,9 @@
  * @param {Array} vetor 
  * @return {Number} o menor valor.
  */
-function acharMenor(vetor) { 
+function acharMenor(vetor) {
+    vetor.sort()
+    return vetor[0]
 }
 
 /**
@@ -13,5 +15,12 @@ function acharMenor(vetor) {
  * @param {Array} vetor com números inteiros.
  * @returns {Array} vetor contendo apenas números pares do original (ou vazio se não houver nenhum)
  */
-function acharPares(vetor) { 
+function acharPares(vetor) {
+    var numerosPares = []
+    for (let i = 0; i < vetor.length; i++) {
+        if (vetor[i] % 2 == 0) {
+            numerosPares.push(vetor[i])
+        }
+    }
+    return numerosPares
 }
